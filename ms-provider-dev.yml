@@ -1,0 +1,5 @@
+spring:
+  dubbo:
+    protocol:
+      name: dubbo
+      port: 20880
