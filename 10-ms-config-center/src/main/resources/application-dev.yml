@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ms-config-center
+  boot:
+    admin:
+      url: http://localhost:20001
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Paleozoic/spring_boot_dubbox_demo
+          default-label: config-repo
+
+management:
+  security:
+    enabled: false
