@@ -1,4 +1,7 @@
 spring:
+  boot:
+    admin:
+      url: http://127.0.0.1:20001
   dubbo:
       scan: com.maxplus1
       registry:
