@@ -4,6 +4,8 @@ spring:
       url: http://127.0.0.1:20001
   dubbo:
       scan: com.maxplus1
-      registry: zookeeper://127.0.0.1:2181
-      protocol: dubbo
-      port: -1
+      registry:
+        address: zookeeper://127.0.0.1:2181
+      protocol:
+        name: dubbo
+        port: -1
