@@ -1,0 +1,1 @@
+keyRouter=com.alibaba.dubbo.rpc.cluster.router.KeyRouterFactory
