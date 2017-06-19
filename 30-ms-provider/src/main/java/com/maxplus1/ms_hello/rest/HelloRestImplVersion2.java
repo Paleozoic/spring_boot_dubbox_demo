@@ -1,6 +1,8 @@
 package com.maxplus1.ms_hello.rest;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
@@ -15,6 +17,10 @@ public class HelloRestImplVersion2 implements HelloRest {
 
     public String hello() {
         return "hello2";
+    }
+
+    public String hello(String version) {
+        return "hello " + version;
     }
 
 }

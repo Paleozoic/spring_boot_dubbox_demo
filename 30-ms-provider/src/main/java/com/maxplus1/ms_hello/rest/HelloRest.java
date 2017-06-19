@@ -5,4 +5,6 @@ public interface HelloRest {
 
     String hello();
 
+    String hello(String version);
+
 }
