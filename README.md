@@ -1,10 +1,11 @@
 # spring_boot_dubbox_demo
 该项目集成了：
 - Spring Cloud Config Center
-- dubbox
+- dubbox，源码已经修改，见[这里](https://github.com/Paleozoic/dubbox)
 - Spring Boot Admin
 - Monitor 注意：Monitor核心源码[来自这里](https://github.com/handuyishe/dubbo-monitor)，已将其Boot化。
-注意：如果需要做调用监控，需要在需要被监控的消费者和提供者指定监控中心。（或者@Service和@Reference指定monitor）。XML配置如下：
+注意：如果需要做调用监控，需要在需要被监控的消费者和提供者指定监控中心。（或者@Service和@Reference指定monitor）。
+XML配置如下：
 ```
 http://blog.csdn.net/whs_321/article/details/51524604
 Dubbo服务提供者和服务消费者中的spring配置文件中增加以下配置：
@@ -16,6 +17,7 @@ Dubbo服务提供者和服务消费者中的spring配置文件中增加以下配
 
 # 配置
 `application.yml`: 应用配置，慢于配置中心的配置拉取
+
 `bootstrap.yml`: 启动配置，先于配置中心的配置拉取
 
 # 步骤
@@ -38,6 +40,6 @@ java -jar 31-ms-consumer/target/ms-consumer-1.0-SNAPSHOT.jar --spring.profiles.a
 ```
 
 # 访问
-- REST：http://127.0.0.1:20002/test/hello
-- Consumer：http://127.0.0.1:20003/world
-- Consumer：http://127.0.0.1:20003/world2
+- REST：http://127.0.0.1:20003/test/hello
+- Consumer：http://127.0.0.1:20004/world
+- Consumer：http://127.0.0.1:20004/world2
