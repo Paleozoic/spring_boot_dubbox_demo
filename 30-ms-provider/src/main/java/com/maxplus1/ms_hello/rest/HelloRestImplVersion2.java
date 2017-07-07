@@ -1,13 +1,6 @@
 package com.maxplus1.ms_hello.rest;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.core.MediaType;
 
 /**
  * Created by xiaolong.qiu on 2017/5/12.

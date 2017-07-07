@@ -1,0 +1,34 @@
+spring:
+  dubbo:
+    scan: com.handu.open.dubbo.monitor,com.maxplus1
+  datasource:
+        name: test1db
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://localhost:3306/dubbo_monitor?useUnicode=true&characterEncoding=UTF-8
+        username: test
+        password: test@123
+        driver-class-name: com.mysql.jdbc.Driver
+        minIdle: 1
+        maxActive: 2
+        initialSize: 1
+        timeBetweenEvictionRunsMillis: 3000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: SELECT 1 FROM DUAL
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+  jetbrick:
+        template:
+          enabled: true
+          charset: UTF-8
+          content-type: text/html
+          prefix: templates/
+          suffix: .html
+
+mybatis:
+  typeAliasesPackage: com.handu.open.dubbo.monitor.domain
+  mapperLocations: classpath:mappers/*.xml
+
+manager:
+  username: admin
+  password: admin

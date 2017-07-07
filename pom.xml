@@ -12,6 +12,7 @@
     <modules>
         <module>10-ms-config-center</module>
         <module>20-ms-admin</module>
+        <module>21-ms-monitor</module>
         <module>30-ms-provider</module>
         <module>31-ms-consumer</module>
     </modules>
@@ -66,7 +67,7 @@
             <artifactId>javassist</artifactId>
             <version>3.22.0-CR1</version>
         </dependency>
-        <!--mvn install:install-file -Dfile=E:\github\spring_boot_dubbox_demo\dubbox-libs\dubbo-2.8.4.jar -DgroupId=com.alibaba -DartifactId=dubbo -Dversion=2.8.4 -Dpackaging=jar-->
+        <!--mvn install:install-file -Dfile=D:\Work\trytry\spring_boot_dubbox_demo\dubbox-libs\dubbo-2.8.4.jar -DgroupId=com.alibaba -DartifactId=dubbo -Dversion=2.8.4 -Dpackaging=jar-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
@@ -103,6 +104,10 @@
                 <exclusion>
                     <groupId>com.101tec</groupId>
                     <artifactId>zkclient</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>dubbo</artifactId>
+                    <groupId>com.alibaba</groupId>
                 </exclusion>
             </exclusions>
         </dependency>
