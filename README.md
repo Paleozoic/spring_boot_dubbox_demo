@@ -3,6 +3,7 @@
 - Spring Cloud Config Center
 - dubbox
 - Spring Boot Admin
+- Monitor 注意：Monitor核心源码[来自这里](https://github.com/handuyishe/dubbo-monitor)，已将其Boot化。
 
 # 配置
 `application.yml`: 应用配置，慢于配置中心的配置拉取
