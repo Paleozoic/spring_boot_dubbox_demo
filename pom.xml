@@ -96,6 +96,7 @@
             <version>0.10</version>
         </dependency>
         <!-- https://github.com/teaey/spring-boot-starter-dubbo -->
+        <!--http://www.bysocket.com/?p=1805-->
         <dependency>
             <groupId>io.dubbo.springboot</groupId>
             <artifactId>spring-boot-starter-dubbo</artifactId>

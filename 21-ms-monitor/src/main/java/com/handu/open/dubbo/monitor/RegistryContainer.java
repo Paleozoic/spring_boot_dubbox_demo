@@ -53,7 +53,7 @@ public class RegistryContainer {
 
     private final Map<String, List<URL>> serviceConsumers = new ConcurrentHashMap<String, List<URL>>();
 
-//    @Reference
+    @Reference
     private RegistryService registry;
 
     public RegistryService getRegistry() {
@@ -195,7 +195,6 @@ public class RegistryContainer {
                 Constants.CATEGORY_KEY, Constants.PROVIDERS_CATEGORY + ","
                 + Constants.CONSUMERS_CATEGORY,
                 Constants.CHECK_KEY, String.valueOf(false));
-        if(registry==null) return;
         registry.subscribe(subscribeUrl, new NotifyListener() {
             public void notify(List<URL> urls) {
                 if (urls == null || urls.size() == 0) {

@@ -4,6 +4,3 @@ spring:
   cloud:
     config:
       uri: http://127.0.0.1:20000
-  dubbo:
-    application:
-      name: ms-monitor

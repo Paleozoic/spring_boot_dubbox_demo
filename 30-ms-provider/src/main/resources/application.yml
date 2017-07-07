@@ -1,0 +1,5 @@
+spring:
+  dubbo:
+    scan: com.maxplus1
+    application:
+      name: ms-provider
